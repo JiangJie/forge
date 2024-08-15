@@ -1,0 +1,18 @@
+{
+  "name": "tiny",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm exec rollup --config rollup.config.mjs",
+    "watch": "pnpm run build --watch",
+    "lib": "pnpm exec rollup --config lib.rollup.config.mjs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.7",
+    "rollup": "^4.20.0",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "typescript": "^5.5.4"
+  }
+}
